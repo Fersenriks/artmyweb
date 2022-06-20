@@ -17,7 +17,6 @@ export const Pages = [
     component: UsersPage,
   },
   {
-    // exact: true,
     path: routes.EDIT,
     component: EditUserPage,
   },

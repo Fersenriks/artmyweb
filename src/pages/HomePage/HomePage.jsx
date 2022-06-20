@@ -1,9 +1,10 @@
 import React from 'react';
 
 import { Button } from 'antd';
+import { useHistory } from 'react-router-dom';
+
 import { useDispatch } from 'react-redux';
 import { fetchUsers } from '../../store/actions/users';
-import { useHistory } from 'react-router-dom';
 import { routes } from '../../constants';
 
 import './home-page.css';

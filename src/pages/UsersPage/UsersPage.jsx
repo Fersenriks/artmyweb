@@ -9,12 +9,14 @@ const { Option } = Select;
 
 const UsersPage = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
+
   const {
     list,
     pagination,
     pagination: { current },
   } = useSelector((state) => state.users);
-  const history = useHistory();
+
   const genderOptions = useMemo(
     () => [
       { value: 'male', text: 'Male' },

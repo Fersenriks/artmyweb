@@ -7,7 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 
 const Routes = () => {
   return (
-    <Suspense fallback={<Spin size='large' />}>
+    <Suspense fallback={<Spin className='spin' size='large' />}>
       <Switch>
         {Pages.map((item, index) => (
           <Route key={index} {...item} />
