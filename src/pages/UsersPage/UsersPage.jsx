@@ -44,7 +44,7 @@ const UsersPage = () => {
       filterDropdown: ({ setSelectedKeys, selectedKeys, confirm }) => (
         <Select
           value={selectedKeys}
-          // defaultValue='male'
+          placeholder='Select a gender'
           style={{ width: '100%' }}
           onChange={(value) => {
             setSelectedKeys(value);
